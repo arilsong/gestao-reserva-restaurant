@@ -1,27 +1,27 @@
-# 🍽️ Sistema de Gestão de Reservas de Restaurante
+# 🍽️ Restaurant Reservation Management System
 
-Um sistema completo para gerenciamento de reservas de mesas em restaurantes, desenvolvido com Spring Boot (Backend) e React + TypeScript (Frontend).
+A complete system for managing restaurant table reservations, developed with Spring Boot (Backend) and React + TypeScript (Frontend).
 
-## 📋 Descrição
+## 📋 Description
 
-Este projeto é uma solução completa para restaurantes gerenciarem suas reservas de mesas de forma eficiente. O sistema permite que clientes façam reservas online e que restaurantes administrem suas mesas, funcionários e reservas através de dashboards intuitivos.
+This project is a complete solution for restaurants to efficiently manage their table reservations. The system allows customers to make reservations online and restaurants to manage their tables, staff, and reservations through intuitive dashboards.
 
-## 🏗️ Arquitetura
+## 🏗️ Architecture
 
-O projeto está dividido em duas partes principais:
+The project is divided into two main parts:
 
-- **Backend (API)**: Desenvolvido em Java com Spring Boot
-- **Frontend**: Desenvolvido em React com TypeScript
+- **Backend (API)**: Developed in Java with Spring Boot
+- **Frontend**: Developed in React with TypeScript
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 ### Backend
 - **Java 17**
 - **Spring Boot 3.5.0**
 - **Spring Data JPA**
 - **Spring Security**
-- **PostgreSQL** (Banco de dados)
-- **JWT** (Autenticação)
+- **PostgreSQL** (Database)
+- **JWT** (Authentication)
 - **Lombok**
 - **Maven**
 
@@ -30,100 +30,100 @@ O projeto está dividido em duas partes principais:
 - **TypeScript**
 - **Vite** (Build tool)
 - **Tailwind CSS**
-- **Shadcn/ui** (Componentes)
+- **Shadcn/ui** (Components)
 - **React Router DOM**
 - **React Hook Form**
 - **Axios**
 - **TanStack Query**
 - **Radix UI**
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 gestao-reserva-restaurant-main/
-├── api/                          # Backend Spring Boot
-│   ├── src/main/java/com/reservafacil/api/
-│   │   ├── config/              # Configurações
-│   │   ├── controllers/         # Controladores REST
-│   │   ├── dto/                 # Data Transfer Objects
-│   │   ├── entities/            # Entidades JPA
-│   │   ├── enums/               # Enumerações
-│   │   ├── exceptions/          # Tratamento de exceções
-│   │   ├── repositories/        # Repositórios de dados
-│   │   ├── security/            # Configurações de segurança
-│   │   └── services/            # Lógica de negócio
-│   ├── src/main/resources/
-│   │   └── application.properties
-│   └── pom.xml
-├── react/                        # Frontend React
-│   ├── src/
-│   │   ├── components/          # Componentes reutilizáveis
-│   │   ├── context/             # Contextos React
-│   │   ├── hooks/               # Hooks customizados
-│   │   ├── interfaces/          # Interfaces TypeScript
-│   │   ├── lib/                 # Utilitários
-│   │   ├── pages/               # Páginas da aplicação
-│   │   ├── routes/              # Configuração de rotas
-│   │   └── service/             # Serviços de API
-│   ├── package.json
-│   └── vite.config.ts
+├── api/ # Spring Boot Backend
+│ ├── src/main/java/com/reservafacil/api/
+│ │ ├── config/ # Settings
+│ │ ├── controllers/ # REST Controllers
+│ │ ├── dto/ # Data Transfer Objects
+│ │ ├── entities/ # JPA Entities
+│ │ ├── enums/ # Enumerations
+│ │ ├── exceptions/ # Exception Handling
+│ │ ├── repositories/ # Data repositories
+│ │ ├── security/ # Security configurations
+│ │ └── services/ # Business logic
+│ ├── src/main/resources/
+│ │ └── application.properties
+│ └── pom.xml
+├── react/ # React frontend
+│ ├── src/
+│ │ ├── components/ # Reusable components
+│ │ ├── context/ # React contexts
+│ │ ├── hooks/ # Hooks Custom
+│ │ ├── interfaces/ # TypeScript interfaces
+│ │ ├── lib/ # Utilities
+│ │ ├── pages/ # Application pages
+│ │ ├── routes/ # Route configuration
+│ │ └── service/ # API services
+│ ├── package.json
+│ └── vite.config.ts
 └── README.md
 ```
 
-## 🗄️ Modelo de Dados
+## 🗄️ Data Model
 
-### Entidades Principais
+### Main Entities
 
-- **Restaurant**: Informações do restaurante (nome, endereço, telefone, etc.)
-- **Tables**: Mesas disponíveis no restaurante
-- **Client**: Dados dos clientes
-- **Employee**: Funcionários do restaurante
-- **Booking**: Reservas realizadas
-- **Availability**: Disponibilidade das mesas
-- **Review**: Avaliações dos clientes
-- **User**: Usuários do sistema
+- **Restaurant**: Restaurant information (name, address, phone number, etc.)
+- **Tables**: Available tables at the restaurant
+- **Client**: Customer data
+- **Employee**: Restaurant staff
+- **Booking**: Reservations made
+- **Availability**: Table availability
+- **Review**: Customer reviews
+- **User**: System users
 
-## 🔐 Funcionalidades
+## 🔐 Features
 
-### Para Clientes
-- Registro e login
-- Visualização de restaurantes
-- Fazer reservas de mesas
-- Gerenciar perfil
-- Avaliar restaurantes
+### For Customers
+- Registration and Login
+- View Restaurants
+- Make Table Reservations
+- Manage Profiles
+- Rate Restaurants
 
-### Para Restaurantes
-- Registro e login
-- Dashboard de gerenciamento
-- Gestão de mesas
-- Visualização de reservas
-- Gestão de funcionários
-- Visualização de avaliações
+### For Restaurants
+- Registration and Login
+- Management Dashboard
+- Table Management
+- View Reservations
+- Employee Management
+- View Reviews
 
-## 🛠️ Pré-requisitos
+## 🛠️ Prerequisites
 
-- **Java 17** ou superior
-- **Node.js 18** ou superior
-- **PostgreSQL 12** ou superior
-- **Maven 3.6** ou superior
+- **Java 17** or higher
+- **Node.js 18** or higher
+- **PostgreSQL 12** or higher
+- **Maven 3.6** or higher
 
-## 📦 Instalação e Configuração
+## 📦 Installation and Configuration
 
-### 1. Clone o repositório
+### 1. Clone Repository
 ```bash
-git clone <url-do-repositorio>
+git clone <repository-url>
 cd gestao-reserva-restaurant-main
 ```
 
-### 2. Configuração do Banco de Dados
+### 2. Database Configuration
 
-1. Crie um banco PostgreSQL chamado `restaurant_booking`
-2. Configure as credenciais no arquivo `api/src/main/resources/application.properties`:
-   ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:6442/restaurant_booking
-   spring.datasource.username=postgres
-   spring.datasource.password=root
-   ```
+1. Create a PostgreSQL database called `restaurant_booking`
+2. Configure the credentials in the `api/src/main/resources/application.properties` file:
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:6442/restaurant_booking
+spring.datasource.username=postgres
+spring.datasource.password=root
+```
 
 ### 3. Backend (API)
 
@@ -133,7 +133,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-A API estará disponível em: `http://localhost:8080`
+The API will be available at: `http://localhost:8080`
 
 ### 4. Frontend (React)
 
@@ -143,34 +143,34 @@ npm install
 npm run dev
 ```
 
-O frontend estará disponível em: `http://localhost:5173`
+The frontend will be available at: `http://localhost:5173`
 
-## 🔧 Configurações
+## 🔧 Settings
 
-### Variáveis de Ambiente
+### Environment Variables
 
-O projeto utiliza as seguintes configurações principais:
+The project uses the following main settings:
 
-- **JWT Secret**: Configurado em `application.properties`
-- **Porta do Banco**: 6442 (PostgreSQL)
-- **Porta da API**: 8080 (Spring Boot)
-- **Porta do Frontend**: 5173 (Vite)
+- **JWT Secret**: Configured in `application.properties`
+- **Database Port**: 6442 (PostgreSQL)
+- **API Port**: 8080 (Spring Boot)
+- **Frontend Port**: 5173 (Vite)
 
-## 📱 Páginas Principais
+## 📱 Main Pages
 
-### Cliente
-- `/cliente/login` - Login do cliente
-- `/cliente/registro` - Registro do cliente
-- `/cliente/dashboard` - Dashboard do cliente
-- `/cliente/perfil` - Perfil do cliente
+### Customer
+- `/customer/login` - Customer login
+- `/customer/registration` - Customer registration
+- `/customer/dashboard` - Customer dashboard
+- `/customer/profile` - Customer profile
 
-### Restaurante
-- `/restaurante/login` - Login do restaurante
-- `/restaurante/registro` - Registro do restaurante
-- `/restaurante/dashboard` - Dashboard do restaurante
-- `/restaurante/mesas` - Gestão de mesas
-- `/restaurante/reservas` - Visualização de reservas
-- `/restaurante/avaliacoes` - Avaliações recebidas
+### Restaurant
+- `/restaurant/login` - Restaurant login
+- `/restaurant/registration` - Restaurant registration
+- `/restaurant/dashboard` - Restaurant dashboard
+- `/restaurant/tables` - Table management
+- `/restaurant/reservations` - View reservations
+- `/restaurant/reviews` - Received reviews
 
 ## 🚀 Deploy
 
@@ -185,10 +185,10 @@ java -jar target/api-0.0.1-SNAPSHOT.jar
 ```bash
 cd react
 npm run build
-# Os arquivos estarão em dist/
+# The files will be in dist/
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
 ### Backend
 ```bash
@@ -204,11 +204,11 @@ npm run lint
 
 ## 📝 API Endpoints
 
-A API inclui endpoints para:
-- Autenticação (JWT)
-- Gestão de restaurantes
-- Gestão de mesas
-- Gestão de reservas
-- Gestão de clientes
-- Gestão de funcionários
-- Avaliações
+The API includes endpoints for:
+- Authentication (JWT)
+- Restaurant Management
+- Table Management
+- Reservation Management
+- Customer Management
+- Employee Management
+- Reviews
